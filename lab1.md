@@ -5,6 +5,7 @@ CSE 15L | Manh Tri Nguyen | A17913483 | man026@ucsd.edu
 - Using cd
   ```
   # Just my username on my home terminal
+  
   trilosophe@Trilosophes-MPB-16 Library %
 
   trilosophe@Trilosophes-MPB-16 Library % cd
@@ -30,9 +31,19 @@ CSE 15L | Manh Tri Nguyen | A17913483 | man026@ucsd.edu
 
 - Using cat
   ```
+  # Just my username on my home terminal
+  
+  trilosophe@Trilosophes-MPB-16 ~
+
+  trilosophe@Trilosophes-MPB-16 ~ % cat
+  My name is Tri
+  My name is Tri
+  This is an input
+  This is an input
   
   ```
-
+  I am in my home directory `Users/trilosophe`. When using `cat` without an argument, it will like like a repeater to me. Everything I input, once I press entered, will be throw out exactly the same on the terminal screen.
+  
 ### Using `cd`, `ls`, `cat` a path to with a directory as an argument.
 - Using cd
 - Using ls
