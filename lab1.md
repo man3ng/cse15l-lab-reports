@@ -11,7 +11,7 @@ CSE 15L  Manh Tri Nguyen  A17913483  man026@ucsd.edu
 
   trilosophe@Trilosophes-MPB-16 ~  
   ```
-  In the file system, I am in my library directory `Users/trilosophe/Library`. When using `cd` without an argument, I will be prompted to return to my home directory which is
+  In the file system, I am in my library directory `Users/trilosophe/Library`. When using `cd` without an argument, I will be prompted to return to my home directory of the logged in user (with the `~`) which is
   `Users/trilosophe`
   
 - Using ls
