@@ -6,14 +6,13 @@ CSE 15L - Joe Politz - 10:50am - 1 | Manh Tri Nguyen | A17913483 | man026@ucsd.e
   ```
   # Just my username on my home terminal
   
-  trilosophe@Trilosophes-MPB-16 Library %
+  trilosophe@Trilosophes-MPB-16 Favorites %
 
-  trilosophe@Trilosophes-MPB-16 Library % cd
+  trilosophe@Trilosophes-MPB-16 Favories % cd
 
   trilosophe@Trilosophes-MPB-16 ~ % 
   ```
-  I am in my library directory `Users/trilosophe/Library`. When using `cd` without an argument, I will be prompted to return to my home directory of the logged in user (with the `~`) which is
-  `Users/trilosophe`. There is no error.
+  I am in my library directory `Users/trilosophe/Library/Favorites` (can check with `pwd`). When using `cd` without an argument, I will be prompted to return to my home directory of the logged in user (with the `~`) which is `Users/trilosophe`. There is no error.
   
 - Using ls
   ```
@@ -111,7 +110,7 @@ CSE 15L - Joe Politz - 10:50am - 1 | Manh Tri Nguyen | A17913483 | man026@ucsd.e
 
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
-  I am in my home directory `Users/trilosophe`. When using `ls` with a path to a file as an argument,
+  I am in my home directory `Users/trilosophe`. When using `ls` with a path to a file as an argument, the command prints out the path that you initally inputted from the prompt. No error was thrown.
   
 - Using cat
   ```
@@ -119,9 +118,16 @@ CSE 15L - Joe Politz - 10:50am - 1 | Manh Tri Nguyen | A17913483 | man026@ucsd.e
   trilosophe@Trilosophes-MPB-16 ~ %
   
   trilosophe@Trilosophes-MPB-16 ~ % cat Downloads/lab1-test.rtf
-  Downloads/lab1-test.rtf
+  {\rtf1\ansi\ansicpg1252\cocoartf2759
+  \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  {\colortbl;\red255\green255\blue255;}
+  {\*\expandedcolortbl;;}
+  \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  
+  \f0\fs24 \cf0 Hello, this is my personal computer}% 
 
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
 
-  I am in my home directory `Users/trilosophe`. When using `cat` with a path to a file as an argument,
+  I am in my home directory `Users/trilosophe`. When using `cat` with a path to a file as an argument, it will give me the information of the file. For example, with the Rich Text Formating (rtf) format, it shows all the formatting and finally my text line "this is my personal computer" at the end. For a normal `.txt` file, it will output the text in the file. No error is thrown.
