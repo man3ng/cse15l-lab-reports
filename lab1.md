@@ -41,7 +41,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
   This is an input
   
   ```
-  I am in my home directory `Users/trilosophe`. When using `cat` without an argument, it will like like a repeater to me. Everything I input, once I press entered, will be throw out exactly the same on the terminal screen. There is no error thrown, but I am stuck in that screen so I have to force quit to get out of it.
+  I am in my home directory `Users/trilosophe`. When using `cat` without an argument, it will like like a repeater to me. Everything I input, once I press entered, will be throw out exactly the same on the terminal screen since there is no files to read. There is no error thrown, but I am stuck in that screen so I have to force quit to get out of it. You can stop with `CMD + D`.
   
 ### Using `cd`, `ls`, `cat` a path to with a directory as an argument.
 - Using cd
