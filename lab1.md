@@ -130,4 +130,4 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
 
-  I am in my home directory `Users/trilosophe`. When using `cat` with a path to a file as an argument, it will give me the information of the file. For example, with the Rich Text Formating (rtf) format, it shows all the formatting and finally my text line "this is my personal computer" at the end. For a normal `.txt` file, it will output the text in the file. No error is thrown.
+  I am in my home directory `/Users/trilosophe`. When using `cat` with a path to a file as an argument, it will give me the information of the file. For example, with the Rich Text Formating (rtf) format, it shows all the formatting and finally my text line "this is my personal computer" at the end. For a normal `.txt` file, it will output the text in the file. No error is thrown.
