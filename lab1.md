@@ -12,7 +12,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
   trilosophe@Trilosophes-MPB-16 ~ % 
   ```
-  I am in my library directory `Users/trilosophe/Library/Favorites` (can check with `pwd`). When using `cd` without an argument, I will be prompted to return to my home directory of the logged in user (with the `~`) which is `Users/trilosophe`. There is no error.
+  I am in my library directory `/Users/trilosophe/Library/Favorites` (can check with `pwd`). When using `cd` without an argument, I will be prompted to return to my home directory of the logged in user (with the `~`) which is `/Users/trilosophe`. There is no error.
   
 - Using ls
   ```
@@ -26,7 +26,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
   Desktop		Downloads	Movies		Pictures	UCSD
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
-  I am in my home directory `Users/trilosophe`. When using `ls` without an arugment, it will list every folders under the `../trilosophe` folder. There is no error.
+  I am in my home directory `/Users/trilosophe`. When using `ls` without an arugment, it will list every folders under the `../trilosophe` folder. There is no error.
 
 - Using cat
   ```
@@ -41,7 +41,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
   This is an input
   
   ```
-  I am in my home directory `Users/trilosophe`. When using `cat` without an argument, it will like like a repeater to me. Everything I input, once I press entered, will be throw out exactly the same on the terminal screen since there is no files to read. There is no error thrown, but I am stuck in that screen so I have to force quit to get out of it. You can stop with `CMD + D`.
+  I am in my home directory `/Users/trilosophe`. When using `cat` without an argument, it will like like a repeater to me. Everything I input, once I press entered, will be throw out exactly the same on the terminal screen since there is no files to read. There is no error thrown, but I am stuck in that screen so I have to force quit to get out of it. You can stop with `CMD + D`.
   
 ### Using `cd`, `ls`, `cat` a path to with a directory as an argument.
 - Using cd
@@ -54,7 +54,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
   
   trilosophe@Trilosophes-MPB-16 Library %
   ```
-  I am in my home directory `Users/trilosophe`. When using `cd` with a directory as an argument, I will redirect to that directory which is `Users/trilosophe/Library` which is shown with `trilosophe@Trilosophes-MPB-16 Library %` prompt on the terminal
+  I am in my home directory `/Users/trilosophe`. When using `cd` with a directory as an argument, I will be redirected to that directory which is `/Users/trilosophe/Library` which is shown with `trilosophe@Trilosophes-MPB-16 Library %` prompt on the terminal. No error is thrown here because the action of changing directory is completed.
   
 - Using ls
   ```
@@ -72,7 +72,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
-  I am in my home directory `Users/trilosophe`. When using `ls` with a directory as an argument, the terminal will list all the folders and files within the `Users/trilosophe/Downloads/` directory. But, I am in still at the home directory based on the last command line because I haven't moved anywhere.
+  I am in my home directory `/Users/trilosophe`. When using `ls` with a directory as an argument, the terminal will list all the folders and files within the `/Users/trilosophe/Downloads/` directory. But, I am in still at the home directory based on the last command line because I haven't moved anywhere. No error is thrown because the action is complete by listing all the sub-folders/directories under the inputted argument.
   
 - Using cat
   ```
@@ -85,7 +85,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
   
   trilosophe@Trilosophes-MPB-16 ~ % 
   ```
-  I am in my home directory `Users/trilosophe`. When using `cat` with a directory as an argument, the terminal will print an error: "cat: Downloads: Is a directory"; there is nothing to concatenate and you can't concatenate directory using the specific commands nor you can view the contents of the directory (it's not a file).
+  I am in my home directory `/Users/trilosophe`. When using `cat` with a directory as an argument, the terminal will print an error: "cat: Downloads: Is a directory"; there is nothing to concatenate and you can't concatenate directory using the specific commands nor you can view the contents of the directory (it's not a file).
   
 ### Using `cd`, `ls`, `cat` with a path to a file as an argument.
 - Using cd
@@ -98,7 +98,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
-  I am in my home directory `Users/trilosophe`. When using `cd` with a path to a file as an argument, the terminal throws an error: "cd: not a directory: Downloads/lab1-test.rtf". It is because the file is end with an extension `.rtf` for text formatting and it is not a directory for the computer to redirect you to.
+  I am in my home directory `/Users/trilosophe`. When using `cd` with a path to a file as an argument, the terminal throws an error: "cd: not a directory: Downloads/lab1-test.rtf". It is because the file is end with an extension `.rtf` for text formatting and it is not a directory for the computer to redirect you to.
   
 - Using ls
   ```
@@ -110,7 +110,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
   trilosophe@Trilosophes-MPB-16 ~ %
   ```
-  I am in my home directory `Users/trilosophe`. When using `ls` with a path to a file as an argument, the command prints out the path that you initally inputted from the prompt. No error was thrown.
+  I am in my home directory `/Users/trilosophe`. When using `ls` with a path to a file as an argument, the command prints out the path that you initally inputted from the prompt. No error was thrown because the action is completed when all the sub-folders are shown.
   
 - Using cat
   ```
