@@ -6,7 +6,7 @@ Your public key has been saved in /Users/trilosophe/.ssh/id_rsa.pub
 The key fingerprint is:
 SHA256:MSlqloZ0Qb+m75AF1xPs8zdcn4EIaadxrKirGAau79g trilosophe@Trilosophes-MBP-16.local
 
-```
+```java
 /**
  * Name: Manh Tri Nguyen
  * PID: A17913483
@@ -21,13 +21,22 @@ import java.net.URI;
 import java.util.ArrayList;
 
 class Handler implements URLHandler {
-    
-    ArrayList<String> outputString = new ArrayList<>();
+
+    //Initializing ArrayList and MESSAGES
     final String MESSAGE = "Code by Manh Tri Nguyen, A17913483, CSE 15L" + 
     "\nPlease use /add-message?s=<MESSAGE>&user=<NAME> to add message";
-
     final String INPUT_ERROR_MESSAGE = "INVALID INPUT";
-    // example: "/add-message?s=How are you&user=yash"
+    ArrayList<String> outputString = new ArrayList<>();
+    
+    /**
+     * The method will return the inputs that you, the user included in the
+     * parameters when using /add-message
+     * 
+     * @param url the url of the localhost
+     * 
+     * @return Lines of strings of <user>: <message> onto the webpage or errors
+     */
+    @Override
     public String handleRequest(URI url) {
         if (url.getPath().equals("/add-message")) {
             // Split at the &
@@ -38,9 +47,11 @@ class Handler implements URLHandler {
             //Split at = for the first params and store it
             String[] messageParam = queryParts[0].split("=");
             String message = messageParam[1];
+
             //Split at = for the second params and store it
             String[] userParam = queryParts[1].split("=");
             String user = userParam[1];
+
             //Store in ArrayList and output all strings
             String output = user + ": " + message;
             outputString.add(output);
