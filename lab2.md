@@ -37,7 +37,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/add-message")) {
             // Split at the &
             String[] queryParts = url.getQuery().split("\\&");
-            if(queryParts.length <= 1) {
+            if(queryParts.length != 2) {
                 return INPUT_ERROR_MESSAGE;
             }
             //Split at = for the first params and store it
@@ -94,3 +94,8 @@ class ChatServer {
 
 #### Failed Attempt Adding Messages
 <img width="1262" alt="add-error" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/bd22cac0-efee-413e-ac7e-d653a614521b">
+
+- With similar explanation as how this function work above, the reason that there is a error message is to let the user know that the query that you are trying to input
+  after `/add-message?s=` is incorrect or not formatted correctly. The image above show that the user forget to add `<name>` to the query. Even though, the `queryParts`
+  is splitting, the `queryParts` failed at the conditional because there must be 2 elements present in that field before proceeding with the next steps of spliting into
+  other fields and adding the final string to the `ArrayList`.
