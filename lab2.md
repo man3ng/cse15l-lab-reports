@@ -99,3 +99,11 @@ class ChatServer {
   after `/add-message?s=` is incorrect or not formatted correctly. The image above show that the user forget to add `<name>` to the query. Even though, the `queryParts`
   is splitting, the `queryParts` failed at the conditional because there must be 2 elements present in that field before proceeding with the next steps of spliting into
   other fields and adding the final string to the `ArrayList`.
+
+### SSH Command Line
+#### Absolute Path to Private SSH Key
+#### Absolute Path to Public SSH Key
+#### Terminal Interaction SSH-ing to `ieng6` without Password
+
+### Retrospect
+- 
