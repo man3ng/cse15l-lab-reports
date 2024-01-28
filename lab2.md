@@ -77,9 +77,20 @@ class ChatServer {
 
 ### Screenshots of using `/add-message`
 - After compiling the file with `javac ChatServer.java Server.java` and initialize the `ChatServer` with the port number `3350`,
-  I am on the website greeted with the `MESSAGE` because the URL does not contain `/add-message` yet.
+  I am on the website greeted with the `MESSAGE` because the URL does not contain `/add-message` yet. A prompt will appear to guide the user
+  to use `/add-message` to add their own custom messages.
 #### Successfully Adding Messages
 <img width="1256" alt="add-wrk" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/88c1d07d-0a8e-49ae-8e4a-02befbea7c76">
-- There were multiple attempts of using `/add-message` to de
+
+- There were multiple attempts of using `/add-message` to demonstrate that web-page can output multiple lines of messages with the `<name>` and `<messages>` input
+  at the query. When the user is typing  `/add-message?s=<MESSAGE>&user=<NAME>` with the parameter filled out and press enter, the website will not return the `MESSAGE`
+  parameters. Instead, the `if` statement is now true and now we begin spliting the message with the regex `&`; there should be at least two elements present from the split
+  in order to proceed. Then, for each index of the `queryParts`, we split by the regex `=` to get the desired information and store each of them in an array, and the part
+  I desired in a field.
+- After all the field are set up, they will join as an `output` and is added to the ArrayList initialized at the beginning of the code. Using the `.join` method, we will
+  return all the `Strings` that are stored in the `ArrayList` and output them on the screen with the correct formatting.
+- Noted: everytime that the user decide to the add the messages all the reference from `queryParts`, `messageParam`, `message`, `userParam`, `user`, and `output` fields and
+  arrays will change because those are temporary storage. Additionally, the `ArrayList` will be continuously updated with new messages with the original message preserved.
+
 #### Failed Attempt Adding Messages
 <img width="1262" alt="add-error" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/bd22cac0-efee-413e-ac7e-d653a614521b">
