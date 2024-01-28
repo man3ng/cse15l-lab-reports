@@ -76,4 +76,4 @@ class ChatServer {
 ```
 
 ### Screenshots of using `/add-message`
-![Success-add-message](https://drive.google.com/file/d/1HzJ_bnkv6DTg7ayQeW6_sZPyDLFf2GUv/view?usp=share_link)
+![Success-add-message]([https://drive.google.com/file/d/1HzJ_bnkv6DTg7ayQeW6_sZPyDLFf2GUv/view?usp=share_link](https://drive.google.com/file/d/1HzJ_bnkv6DTg7ayQeW6_sZPyDLFf2GUv/view?usp=share_link)https://drive.google.com/file/d/1HzJ_bnkv6DTg7ayQeW6_sZPyDLFf2GUv/view?usp=share_link)
