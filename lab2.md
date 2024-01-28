@@ -76,5 +76,4 @@ class ChatServer {
 ```
 
 ### Screenshots of using `/add-message`
-![Success-add-message](<img width="1214" alt="image" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/f3085e48-8252-4105-b2c7-b30335c55209">
-)
+![Success-add-message](https://drive.google.com/file/d/1HzJ_bnkv6DTg7ayQeW6_sZPyDLFf2GUv/view?usp=share_link)
