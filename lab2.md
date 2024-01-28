@@ -76,5 +76,10 @@ class ChatServer {
 ```
 
 ### Screenshots of using `/add-message`
+- After compiling the file with `javac ChatServer.java Server.java` and initialize the `ChatServer` with the port number `3350`,
+  I am on the website greeted with the `MESSAGE` because the URL does not contain `/add-message` yet.
+#### Successfully Adding Messages
 <img width="1256" alt="add-wrk" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/88c1d07d-0a8e-49ae-8e4a-02befbea7c76">
+- There were multiple attempts of using `/add-message` to de
+#### Failed Attempt Adding Messages
 <img width="1262" alt="add-error" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/bd22cac0-efee-413e-ac7e-d653a614521b">
