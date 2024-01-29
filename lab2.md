@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 class Handler implements URLHandler {
 
-    //Initializing ArrayList and MESSAGES
+    //Initializing ArrayList and MESSAGES and DESIRED_LENGTH variables
     final String MESSAGE = "Code by Manh Tri Nguyen, A17913483, CSE 15L" + 
     "\nPlease use /add-message?s=<MESSAGE>&user=<NAME> to add message";
     final String INPUT_ERROR_MESSAGE = "INVALID INPUT";
