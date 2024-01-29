@@ -146,7 +146,7 @@ To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options.
 [man026@ieng6-201]:~:53$ 
 ```
-- Here is a snap shot of my terminal line-by-line of ssh-ing into the `ieng6` device without asking for a password.
+- Here is a snap shot of my terminal line-by-line of ssh-ing into the `ieng6` device without being asked to enter a password.
 
 ### Retrospect
 - For week 2 and 3 for CSE15L course and lab, I have learned skills to manage my files using the terminal which is the skills that I was never confident of. Additionally,
