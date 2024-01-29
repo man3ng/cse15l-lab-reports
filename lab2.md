@@ -102,8 +102,51 @@ class ChatServer {
 
 ### SSH Command Line
 #### Absolute Path to Private SSH Key
+
+```
+trilosophe@Trilosophes-MBP-16 .ssh % pwd
+/Users/trilosophe/.ssh
+trilosophe@Trilosophes-MBP-16 .ssh % ls
+id_rsa		id_rsa.pub	known_hosts
+```
+- This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device.
+
 #### Absolute Path to Public SSH Key
+
+```
+[man026@ieng6-201]:.ssh:67$ pwd
+/home/linux/ieng6/oce/8o/man026/.ssh
+[man026@ieng6-201]:.ssh:68$ ls
+authorized_keys  id_rsa  id_rsa.pub
+[man026@ieng6-201]:.ssh:69$ 
+```
+- After successfully logging on to my `ieng6` virtual desktop without a password with my key, I can access the location where my `public key` is being stored.
+
 #### Terminal Interaction SSH-ing to `ieng6` without Password
 
+```
+trilosophe@Trilosophes-MBP-16 / % ssh man026@ieng6-201.ucsd.edu
+Last login: Sun Jan 28 01:05:54 2024 from 100.91.160.47
+quota: Cannot resolve mountpoint path /home/linux/dsmlp/.snapshot/daily.2024-01-12_0010: Stale file handle
+Hello man026, you are currently logged into ieng6-201.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   17:50:01   49  1.70,  2.03,  2.09
+ieng6-202   17:50:01   23  0.08,  0.18,  0.26
+ieng6-203   17:50:01   28  4.07,  3.18,  3.02
+
+ 
+
+To begin work for one of your courses [ cs15lwi24 ], type its name 
+at the command prompt.  (For example, "cs15lwi24", without the quotes).
+
+To see all available software packages, type "prep -l" at the command prompt,
+or "prep -h" for more options.
+[man026@ieng6-201]:~:53$ 
+```
+- Here is a snap shot of my terminal line-by-line of ssh-ing into the `ieng6` device without asking for a password.
 ### Retrospect
 - 
