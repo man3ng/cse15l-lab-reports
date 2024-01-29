@@ -142,11 +142,14 @@ ieng6-203   17:50:01   28  4.07,  3.18,  3.02
 
 To begin work for one of your courses [ cs15lwi24 ], type its name 
 at the command prompt.  (For example, "cs15lwi24", without the quotes).
-
 To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options.
 [man026@ieng6-201]:~:53$ 
 ```
 - Here is a snap shot of my terminal line-by-line of ssh-ing into the `ieng6` device without asking for a password.
+
 ### Retrospect
-- 
+- For week 2 and 3 for CSE15L course and lab, I have learned skills to manage my files using the terminal which is the skills that I was never confident of. Additionally,
+  I learned how to use command line such as `scp`, `ssh`, and `curl` to manage content with the local host and the remote system. These are the skills that I consider
+  essential and applicable in the future. Lastly, if you can't `ls` to see the all the contents on your remote desktop, one my groupmate at the lab introduced me with the
+  command `ls -a` to see the hidden files; I assume this `-a` mean to include all the hidden files under the directory.
