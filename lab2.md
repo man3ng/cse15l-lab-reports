@@ -22,6 +22,7 @@ class Handler implements URLHandler {
     final String MESSAGE = "Code by Manh Tri Nguyen, A17913483, CSE 15L" + 
     "\nPlease use /add-message?s=<MESSAGE>&user=<NAME> to add message";
     final String INPUT_ERROR_MESSAGE = "INVALID INPUT";
+    final int DESIRED_LENGTH = 2;
     ArrayList<String> outputString = new ArrayList<>();
     
     /**
@@ -37,7 +38,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/add-message")) {
             // Split at the &
             String[] queryParts = url.getQuery().split("\\&");
-            if(queryParts.length != 2) {
+            if(queryParts.length != DESIRED_LENGTH) {
                 return INPUT_ERROR_MESSAGE;
             }
             //Split at = for the first params and store it
