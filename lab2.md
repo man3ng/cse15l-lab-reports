@@ -89,7 +89,7 @@ class ChatServer {
   in order to proceed.`queryParts` is updated with all the split strings.
 - We split by the regex `=` for `queryParts[0]` to get the strings from the message and stored in `messageParam`. Then, we will store `messageParam[1]` in a String type object
   `message`. Then we will split by the regex `=` for `queryParts[1]` to get the strings from the user and stored in `userParam`. Then, we will store `userParam[1]` in the
-  String object `user`.
+  String object `user`. The reason I chose `messageParam[1]` and `userParam[1]` is because I want to ignore `s=` and `user=` at each respective parameter.
 - After all the field are set up, they will join as an `output` and is added to the ArrayList initialized at the beginning of the code. Using the `.join` method, we will
   return all the `Strings` that are stored in the `ArrayList` and output them on the screen with the correct formatting.
 - Noted: everytime that the user decide to the add the messages all the reference from `queryParts`, `messageParam`, `message`, `userParam`, `user`, and `output` fields and
@@ -112,7 +112,8 @@ trilosophe@Trilosophes-MBP-16 .ssh % pwd
 trilosophe@Trilosophes-MBP-16 .ssh % ls
 id_rsa		id_rsa.pub	known_hosts
 ```
-- This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device after `cd` into `.ssh`.
+- This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device after `cd` into `.ssh`. I use
+  `pwd` to show my absolute path and `ls` to show the contents inside my current directory.
 
 #### Absolute Path to Public SSH Key
 
@@ -124,6 +125,8 @@ authorized_keys  id_rsa  id_rsa.pub
 [man026@ieng6-201]:.ssh:69$ 
 ```
 - After successfully logging on to my `ieng6` virtual desktop without a password with my key, I can access the location where my `public key` is being stored.
+  Using `ls -a` initially, I am able to locate the `.ssh` folder to move into. After that, I use `pwd` to show my absolute path and `ls` for content inside my
+  current directory.
 
 #### Terminal Interaction SSH-ing to `ieng6` without Password
 
