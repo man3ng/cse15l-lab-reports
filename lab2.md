@@ -86,8 +86,10 @@ class ChatServer {
 - There were multiple attempts of using `/add-message` to demonstrate that web-page can output multiple lines of messages with the `<name>` and `<messages>` input
   at the query. When the user is typing  `/add-message?s=<MESSAGE>&user=<NAME>` with the parameter filled out and press enter, the website will not return the `MESSAGE`
   parameters. Instead, the `if` statement is now true and now we begin spliting the message with the regex `&`; there should be at least two elements present from the split
-  in order to proceed. Then, for each index of the `queryParts`, we split by the regex `=` to get the desired information and store each of them in an array, and the part
-  I desired in a field.
+  in order to proceed.`queryParts` is updated with all the split strings.
+- We split by the regex `=` for `queryParts[0]` to get the strings from the message and stored in `messageParam`. Then, we will store `messageParam[1]` in a String type object
+  `message`. Then we will split by the regex `=` for `queryParts[1]` to get the strings from the user and stored in `userParam`. Then, we will store `userParam[1]` in the
+  String object `user`.
 - After all the field are set up, they will join as an `output` and is added to the ArrayList initialized at the beginning of the code. Using the `.join` method, we will
   return all the `Strings` that are stored in the `ArrayList` and output them on the screen with the correct formatting.
 - Noted: everytime that the user decide to the add the messages all the reference from `queryParts`, `messageParam`, `message`, `userParam`, `user`, and `output` fields and
@@ -110,7 +112,7 @@ trilosophe@Trilosophes-MBP-16 .ssh % pwd
 trilosophe@Trilosophes-MBP-16 .ssh % ls
 id_rsa		id_rsa.pub	known_hosts
 ```
-- This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device.
+- This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device after `cd` into `.ssh`.
 
 #### Absolute Path to Public SSH Key
 
