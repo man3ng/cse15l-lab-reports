@@ -89,7 +89,7 @@ class ChatServer {
   in order to proceed.`queryParts` is updated with all the split strings.
 - We split by the regex `=` for `queryParts[0]` to get the strings from the message and stored in `messageParam`. Then, we will store `messageParam[1]` in a String type object
   `message`. Then we will split by the regex `=` for `queryParts[1]` to get the strings from the user and stored in `userParam`. Then, we will store `userParam[1]` in the
-  String object `user`. The reason I chose `messageParam[1]` and `userParam[1]` is because I want to ignore `s=` and `user=` at each respective parameter.
+  String object `user`. The reason I chose `messageParam[1]` and `userParam[1]` is because I want to ignore `s=` and `user=` at each respective split parameter.
 - After all the field are set up, they will join as an `output` and is added to the ArrayList initialized at the beginning of the code. Using the `.join` method, we will
   return all the `Strings` that are stored in the `ArrayList` and output them on the screen with the correct formatting.
 - Noted: everytime that the user decide to the add the messages all the reference from `queryParts`, `messageParam`, `message`, `userParam`, `user`, and `output` fields and
