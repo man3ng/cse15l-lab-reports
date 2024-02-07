@@ -114,11 +114,6 @@ id_rsa		id_rsa.pub	known_hosts
 trilosophe@Trilosophes-MBP-16 .ssh % cat id_rsa
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
-NhAAAAAwEAAQAAAYEAyCH/U9IyoIQWzkSiUwiY6sakOkNEsCIHeJf+ARWbrh2cX2jtSx7B
-56dDRy59tG8njjB3VqXfdIj7yxRZAzlCRNN8YKtj7wivO0oPbQCFHF0QXORl/2JpIHIT56
-6Dp4xjc5oN1DGaFz/V+TwKiyvFVPr1HiYMtjcl8TximB/eJ7ieNuB0nJ1t1xxPVs6TZEEj
-86iSWLFVAKKaFyNXozWdoEfHLk0KQROCpdmEvgUFZ42KiM6giD9bJMWs8yxptxg2dRi74S
-ljn5hzrXGqbBYdsyBeBHFUFF/bvQ2cwoj3+8Jm7GrQzIc9Ol+Gas02S1O5kmEGRmQX8Fzn
 65R8uGrVIFkqxKI8pv3RSl48dY7//YtTg6XcRZzj0hbZGxk1AgwuewL/ixzeM3W4Zz0sB2
 #omitted for safety
 -----END OPENSSH PRIVATE KEY-----
@@ -136,9 +131,10 @@ trilosophe@Trilosophes-MBP-16 .ssh %
 authorized_keys  id_rsa  id_rsa.pub
 #skip forward a few unclean line of codes
 [man026@ieng6-201]:.ssh:77$ ls
-authorized_keys  id_rsa  id_rsa.pub
+authorized_keys  known_hosts
 [man026@ieng6-201]:.ssh:78$ cat authorized_keys 
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIIf9T0jKghBbORKJTCJjqxqQ6Q0SwIgd4l/4BFZuuHZxfaO1LHsHnp0NHLn20byeOMHdWpd90iPvLFFkDOUJE03xgq2PvCK87Sg9tAIUcXRBc5GX/YmkgchPnroOnjGNzmg3UMZoXP9X5PAqLK8VU+vUeJgy2NyXxPGKYH94nuJ424HScnW3XHE9WzpNkQSPzqJJYsVUAopoXI1ejNZ2gR8cuTQpBE4Kl2YS+BQVnjYqIzqCIP1skxazzLGm3GDZ1GLvhKWOfmHOtcapsFh2zIF4EcVQUX9u9DZzCiPf7wmbsatDMhz06X4ZqzTZLU7mSYQZGZBfwXOfrlHy4atUgWSrEojym/dFKXjx1jv/9i1ODpdxFnOPSFtkbGTUCDC57Av+LHN4zdbhnPSwHbjA+30dc13bM09Od1VMz09XQYF+U/46hdfVxheu2OM3hcddHET9TPMba7YE0M/ehz6MaARYj5czOVbMsLEFj7DNgSB8zY1z5pupmy+Z57IcOm6c= trilosophe@Trilosophes-MBP-16.local
+ssh-rsa AAAfdfdfsfsf4123dQYF+U/46hdfVxheu2OM3hcddHET9TPMba7YE0M/ehz6MaARYj5czOVbMsLEFj7DNgSB8zY1z5pupmy+Z57IcOm6c= trilosophe@Trilosophes-MBP-16.local
+#omitted and modified some part to maintain privacy
 [man026@ieng6-201]:.ssh:79$ 
 ```
 - After successfully logging on to my `ieng6` virtual desktop without a password with my key, I can access the location where my `public key` is being stored.
