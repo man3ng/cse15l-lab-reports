@@ -125,7 +125,7 @@ ljn5hzrXGqbBYdsyBeBHFUFF/bvQ2cwoj3+8Jm7GrQzIc9Ol+Gas02S1O5kmEGRmQX8Fzn
 trilosophe@Trilosophes-MBP-16 .ssh % 
 ```
 - This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device after `cd` into `.ssh`. I use
-  `pwd` to show my absolute path and `ls` to show the contents inside my current directory. The private key is named `id_rsa`.
+  `pwd` to show my absolute path and `ls` to show the contents inside my current directory. The private key is named `id_rsa` stored under `/Users/trilosophe/.ssh`.
 
 #### Absolute Path to Public SSH Key
 
@@ -143,7 +143,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIIf9T0jKghBbORKJTCJjqxqQ6Q0SwIgd4l/4BFZuu
 ```
 - After successfully logging on to my `ieng6` virtual desktop without a password with my key, I can access the location where my `public key` is being stored.
   Using `ls -a` initially, I am able to locate the `.ssh` folder to move into. After that, I use `pwd` to show my absolute path and `ls` for content inside my
-  current directory. Then, I use `cat` authorized_keys to see the key stored inside authorized_keys.
+  current directory. Then, I use `cat` authorized_keys to see the key stored inside authorized_keys which is under the path `/home/linux/ieng6/oce/8o/man026/.ssh`.
 
 #### Terminal Interaction SSH-ing to `ieng6` without Password
 
