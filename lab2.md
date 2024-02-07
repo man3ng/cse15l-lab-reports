@@ -111,9 +111,21 @@ trilosophe@Trilosophes-MBP-16 .ssh % pwd
 /Users/trilosophe/.ssh
 trilosophe@Trilosophes-MBP-16 .ssh % ls
 id_rsa		id_rsa.pub	known_hosts
+trilosophe@Trilosophes-MBP-16 .ssh % cat id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAYEAyCH/U9IyoIQWzkSiUwiY6sakOkNEsCIHeJf+ARWbrh2cX2jtSx7B
+56dDRy59tG8njjB3VqXfdIj7yxRZAzlCRNN8YKtj7wivO0oPbQCFHF0QXORl/2JpIHIT56
+6Dp4xjc5oN1DGaFz/V+TwKiyvFVPr1HiYMtjcl8TximB/eJ7ieNuB0nJ1t1xxPVs6TZEEj
+86iSWLFVAKKaFyNXozWdoEfHLk0KQROCpdmEvgUFZ42KiM6giD9bJMWs8yxptxg2dRi74S
+ljn5hzrXGqbBYdsyBeBHFUFF/bvQ2cwoj3+8Jm7GrQzIc9Ol+Gas02S1O5kmEGRmQX8Fzn
+65R8uGrVIFkqxKI8pv3RSl48dY7//YtTg6XcRZzj0hbZGxk1AgwuewL/ixzeM3W4Zz0sB2
+#omitted for safety
+-----END OPENSSH PRIVATE KEY-----
+trilosophe@Trilosophes-MBP-16 .ssh % 
 ```
 - This is a copy of my terminal, line-by-line. I am able to see my public key and private key storing location on my local device after `cd` into `.ssh`. I use
-  `pwd` to show my absolute path and `ls` to show the contents inside my current directory.
+  `pwd` to show my absolute path and `ls` to show the contents inside my current directory. The private key is named `id_rsa`.
 
 #### Absolute Path to Public SSH Key
 
