@@ -122,11 +122,16 @@ id_rsa		id_rsa.pub	known_hosts
 /home/linux/ieng6/oce/8o/man026/.ssh
 [man026@ieng6-201]:.ssh:68$ ls
 authorized_keys  id_rsa  id_rsa.pub
-[man026@ieng6-201]:.ssh:69$ 
+#skip forward a few unclean line of codes
+[man026@ieng6-201]:.ssh:77$ ls
+authorized_keys  id_rsa  id_rsa.pub
+[man026@ieng6-201]:.ssh:78$ cat authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIIf9T0jKghBbORKJTCJjqxqQ6Q0SwIgd4l/4BFZuuHZxfaO1LHsHnp0NHLn20byeOMHdWpd90iPvLFFkDOUJE03xgq2PvCK87Sg9tAIUcXRBc5GX/YmkgchPnroOnjGNzmg3UMZoXP9X5PAqLK8VU+vUeJgy2NyXxPGKYH94nuJ424HScnW3XHE9WzpNkQSPzqJJYsVUAopoXI1ejNZ2gR8cuTQpBE4Kl2YS+BQVnjYqIzqCIP1skxazzLGm3GDZ1GLvhKWOfmHOtcapsFh2zIF4EcVQUX9u9DZzCiPf7wmbsatDMhz06X4ZqzTZLU7mSYQZGZBfwXOfrlHy4atUgWSrEojym/dFKXjx1jv/9i1ODpdxFnOPSFtkbGTUCDC57Av+LHN4zdbhnPSwHbjA+30dc13bM09Od1VMz09XQYF+U/46hdfVxheu2OM3hcddHET9TPMba7YE0M/ehz6MaARYj5czOVbMsLEFj7DNgSB8zY1z5pupmy+Z57IcOm6c= trilosophe@Trilosophes-MBP-16.local
+[man026@ieng6-201]:.ssh:79$ 
 ```
 - After successfully logging on to my `ieng6` virtual desktop without a password with my key, I can access the location where my `public key` is being stored.
   Using `ls -a` initially, I am able to locate the `.ssh` folder to move into. After that, I use `pwd` to show my absolute path and `ls` for content inside my
-  current directory.
+  current directory. Then, I use `cat` authorized_keys to see the key stored inside authorized_keys.
 
 #### Terminal Interaction SSH-ing to `ieng6` without Password
 
