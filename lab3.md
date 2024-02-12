@@ -3,7 +3,8 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 ### Bugs from Week 4 Lab
 1. Failure inducing-input for the buggy program
      ```java
-     @Testpublic void appendTest() {
+     @Test
+     public void appendTest() {
           for(int i = 10; i >= 0; i--) {
                emptyList.append(i);
           }
@@ -15,7 +16,8 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
 2. Input that doesn't induce failure
      ```java
-     @Testpublic void appendTest() {
+     @Test
+     public void appendTest() {
           emptyList.append(1);
           assertEquals(emptyList.root.value, 1);
      }
