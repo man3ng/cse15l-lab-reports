@@ -84,7 +84,26 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
      ```
      As you can see between the before and after image, let's focus on this particular operation `next = new Node(value, null);`. It is setting the next non null node to be the the value, which should be the last node of the Linkedlist. Also, it will create a new tail node with the value of null. However, in the original code, it is set inside, which keep generating the next non-null node, and the while loop never managed to catch the node that is not null which caused the "heap space" error. The quick fix was to put `next = new Node(value, null);` outside and after the while loop.
 ### Part Two: Researching Command Lines Options - `GREP`
-- First variation
+- First variation: `grep -r "pattern" directory/`
+  - The function is recursively searching the inputted directories and search everything in there that has the pattern
+    1. Input: `trilosophe@Trilosophes-MBP-16 docsearch % grep -r "tri" technical/`
+         Output: `  technical//biomed/1476-069X-2-9.txt:        in this study it was found that chemical distribution
+                    technical//biomed/1476-069X-2-9.txt:        Authors' contributions
+                    technical//biomed/1478-1336-1-3.txt:        intrinsic histone acetyltransferase activity suggests that
+                    technical//biomed/1478-1336-1-3.txt:          105 per well) in 5% charcoal stripped serum (Hyclone,
+                    technical//biomed/1478-1336-1-3.txt:          phenol red-free DMEM containing 5% charcoal stripped
+                    technical//biomed/1478-1336-1-3.txt:        Authors' Contributions
+                    technical//biomed/1471-2164-2-4.txt:          restriction endonuclease Alu I and assayed in two
+                    technical//biomed/1471-2164-2-4.txt:          determined by restriction fragment length polymorphism or
+                    technical//biomed/1471-2164-2-4.txt:          samples were repeated in triplicate the genotyping
+                    technical//biomed/1471-2164-2-4.txt:        triplicate, the genotyping accuracy jumped to over 99%. The
+                    technical//biomed/1471-2164-2-4.txt:        and industrial laboratories.
+                    technical//biomed/1471-2164-2-4.txt:          CAU). The DNA samples were digested with the restriction`
+         I recursively searched within the `technical/` directory find any files and sub-directories with the pattern of **"Tri"**. There were hundred of lines that have the matched pattern. I didn't include it here due to space. Biggest downside, if you are looking through all of this, there are too many files to look at and you can't get much out of it.
+    2. Input: `grep -r "Tri" technical/ | wc -l`
+          Output: `900`
+          With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
+            
 - Second variation
 - Third variation
 - Fourth variation
