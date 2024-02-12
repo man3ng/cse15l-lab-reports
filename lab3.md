@@ -82,3 +82,5 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
         next = new Node(value, null);
      }
      ```
+     As you can see between the before and after image, let's focus on this particular operation `next = new Node(value, null);`. It is setting the next non null node to be the the value, which should be the last node of the Linkedlist. Also, it will create a new tail node with the value of null. However, in the original code, it is set inside, which keep generating the next non-null node, and the while loop never managed to catch the node that is not null which caused the "heap space" error. The quick fix was to put `next = new Node(value, null);` outside and after the while loop.
+### Part Two: Researching Command Lines Options 
