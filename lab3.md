@@ -83,4 +83,67 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
      }
      ```
      As you can see between the before and after image, let's focus on this particular operation `next = new Node(value, null);`. It is setting the next non null node to be the the value, which should be the last node of the Linkedlist. Also, it will create a new tail node with the value of null. However, in the original code, it is set inside, which keep generating the next non-null node, and the while loop never managed to catch the node that is not null which caused the "heap space" error. The quick fix was to put `next = new Node(value, null);` outside and after the while loop.
-### Part Two: Researching Command Lines Options 
+### Part Two: Researching Command Lines Options - `GREP`
+- First variation
+- Second variation
+- Third variation
+- Fourth variation
+
+- Citation:
+  - ChatGPT:
+    - Prompt: "give me all the useful variations of using grep"
+    - Output:
+      Sure, here are some useful variations of using `grep`:
+
+     1. **Basic pattern matching**: Search for a pattern in a file.
+        ```bash
+        grep "pattern" file.txt
+        ```
+     
+     2. **Case-insensitive search**: Ignore case distinctions in both the pattern and the input files.
+        ```bash
+        grep -i "pattern" file.txt
+        ```
+     
+     3. **Display line numbers**: Display line numbers along with the matching lines.
+        ```bash
+        grep -n "pattern" file.txt
+        ```
+     
+     4. **Display only matching part**: Display only the part of each line that matches the pattern.
+        ```bash
+        grep -o "pattern" file.txt
+        ```
+     
+     5. **Invert match**: Display lines that do not contain the pattern.
+        ```bash
+        grep -v "pattern" file.txt
+        ```
+     
+     6. **Recursive search**: Search for a pattern recursively in all files under a directory.
+        ```bash
+        grep -r "pattern" directory/
+        ```
+     
+     7. **Count matches**: Display only the count of matching lines.
+        ```bash
+        grep -c "pattern" file.txt
+        ```
+     
+     8. **Using regular expressions**: Use regular expressions for pattern matching.
+        ```bash
+        grep -E "regex pattern" file.txt
+        ```
+     
+     9. **Search for whole words only**: Match whole words only, not substrings.
+        ```bash
+        grep -w "word" file.txt
+        ```
+     
+     10. **Display lines before/after match**: Display lines before or after the matching line.
+         ```bash
+         grep -B 3 "pattern" file.txt  # Display 3 lines before the match
+         grep -A 3 "pattern" file.txt  # Display 3 lines after the match
+         ```
+     
+     These are some of the commonly used variations of `grep` commands, but there are many more options available. You can always refer to the `grep` manual (`man grep`) for more details and options.
