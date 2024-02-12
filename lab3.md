@@ -11,3 +11,17 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
           assertEquals(emptyList.length(), 11);
      }
      ```
+     - For this particular append method for the LinkedList, the aim of the JUnit test is to add multiple inputs sequentially to the list and check how many elements there are in the list after all the element it is added. This aimed to test not only the `append()` method, which is our main focus, but also the `length()` method. The total should return an integer of 11 for the length, and the last element should be 0.
+
+2. Input that doesn't induce failure
+     ```java
+     @Testpublic void appendTest() {
+          emptyList.append(1);
+          assertEquals(emptyList.root.value, 1);
+     }
+     ```
+     - For this particular test, we are initializing an empty list. We are appending to the list with the element 1. According to the method, when the root is null, the method will replace the root's value as the inputted value.
+
+3. The symptoms of the failure input and non-failure input
+   ```java
+   ```
