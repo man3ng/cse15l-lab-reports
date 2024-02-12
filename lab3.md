@@ -26,6 +26,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
 3. The symptoms of the failure input and non-failure input
    - Error
+
      <img width="821" alt="image" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/cb6838e6-ef0b-48ae-b554-797d47ce1126">
    - Non-error
      <img width="994" alt="image" src="https://github.com/man3ng/cse15l-lab-reports/assets/141669725/db0fe5fa-da49-4f09-a2bd-c2a077e1a301">
