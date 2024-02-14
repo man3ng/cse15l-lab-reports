@@ -185,7 +185,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
     2. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
        Output: `38054`
        While I could display all the lines, it would not be able to fit all of them in this particular document. However, if you are trying to remove a particular file with the "pattern" out of the directory, now you have all the files needed for your automated tool to start removing. Extremely useful!
-4. Fourth variation
+4. Fourth variation: ``
 
 - Citation:
   - ChatGPT:
