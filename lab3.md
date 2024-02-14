@@ -104,7 +104,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
        I recursively searched within the `technical/` directory find any files and sub-directories with the pattern of **"Tri"**. There were hundred of lines that have the matched pattern. I didn't include it here due to space. Biggest downside, if you are looking through all of this, there are too many files to look at and you can't get much out of it.
     3. Input: `grep -r "Tri" technical/ | wc -l`
-       //
+       <br>
        Output: `900`
        With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
             
