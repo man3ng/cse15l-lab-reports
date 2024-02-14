@@ -108,8 +108,43 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
        Output: `900`
        With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
             
-- Second variation
-- Third variation
+- Second variation: `grep -A <afterlineNum> "filename"`
+  - To follow up with the last command, we are displaying the content of a particular file that we want onto the terminal.
+    1. Input: `trilosophe@Trilosophes-MBP-16 Media % grep -A 5 "law" Legal_Aid_attorney.txt`
+       Output:
+     `Depictions of lawyers in American pop culture are
+     notoriously unkind.
+     Whether castigating them on the silver screen, between the lines
+     of pulpy, true-crime narratives, or in the jokes told around the
+     proverbial water cooler, attorneys have been on the receiving end
+     of many a hackneyed punch line.
+     --
+     when she entered law school at Georgetown University that she
+     wanted to use her training to help others.
+     "A reason I went to law school was to do social justice work,"
+     Schwartz said recently. "I get paid to make the community a better
+     place for vulnerable people -- and I like that." Schwartz grew up
+     in Charlotte, N.C. She earned a bachelor's degree in English
+     literature from Davidson College before heading to Georgetown for
+     her law degree, where she finished in 1993.
+     "When I was in school I really liked Virginia Woolf," Schwartz
+     said of her nascent literary tastes. "Right now what I read is
+     nonfiction.
+     "I've been reading a lot about Buddhism," she added. "I just
+     sort of call it my peace studies program -- any author that I think
+     --
+     tribal and housing law. Legal Aid is a nonprofit national
+     organization aimed at providing low-cost or free legal aid to those
+     who need it.
+     A South Dakota blizzard six years ago prompted her to call the
+     Roseburg office, which, coincidentally, was in the process of
+     trying to find her to fill the vacancy left by Rubenstein's
+     trilosophe@Trilosophes-MBP-16 Media % `
+     For this example, I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government/Media`. I want to display the content containing the word **"law"** in this particular file after line number **5**. It is particular useful if you are working with organized data and are searching for some particular lines of the text.
+     2. Input: `trilosophe@Trilosophes-MBP-16 government % grep -r -A 5 "law" Media/ | wc -l`
+        Output: `4445`
+        I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government` and combining the technique from the previous example to recursively search through the `Media/` directory to find all the files with the pattern **"law"** after line number 5 and count the number of lines that are outputing.
+- Third variation: `grep -`
 - Fourth variation
 
 - Citation:
