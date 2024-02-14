@@ -84,7 +84,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
      ```
      As you can see between the before and after image, let's focus on this particular operation `next = new Node(value, null);`. It is setting the next non null node to be the the value, which should be the last node of the Linkedlist. Also, it will create a new tail node with the value of null. However, in the original code, it is set inside, which keep generating the next non-null node, and the while loop never managed to catch the node that is not null which caused the "heap space" error. The quick fix was to put `next = new Node(value, null);` outside and after the while loop.
 ### Part Two: Researching Command Lines Options - `GREP`
-- First variation: `grep -r "pattern" directory/`
+1. First variation: `grep -r "pattern" directory/`
   - The function is recursively searching the inputted directories and search everything in there that has the pattern
     1. Input: `trilosophe@Trilosophes-MBP-16 docsearch % grep -r "tri" technical/`
 
@@ -108,7 +108,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
        Output: `900`
        With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
             
-- Second variation: `grep -A <afterlineNum> "filename"`
+2. Second variation: `grep -A <afterlineNum> "filename"`
   - To follow up with the last command, we are displaying the content of a particular file that we want onto the terminal after a certain line numbers.
     1. Input: `trilosophe@Trilosophes-MBP-16 Media % grep -A 5 "law" Legal_Aid_attorney.txt`
        Output:
@@ -144,7 +144,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
      2. Input: `trilosophe@Trilosophes-MBP-16 government % grep -r -A 5 "law" Media/ | wc -l`
         Output: `4445`
         I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government` and combining the technique from the previous example to recursively search through the `Media/` directory to find all the files with the pattern **"law"** after line number 5 and count the number of lines that are outputing.
-- Third variation: `grep -v "pattern" <filename>`
+3. Third variation: `grep -v "pattern" <filename>`
   - We are displaying the part that do not match that pattern. It is particularly useful if you are looking for something that's wrong.
     1. Input: `trilosophe@Trilosophes-MBP-16 plos grep -v "Tri" pmed.0020024.txt %`
        Output:
@@ -185,7 +185,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
     2. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
        Output: `38054`
        While I could display all the lines, it would not be able to fit all of them in this particular document. However, if you are trying to remove a particular file with the "pattern" out of the directory, now you have all the files needed for your automated tool to start removing. Extremely useful!
-- Fourth variation
+4. Fourth variation
 
 - Citation:
   - ChatGPT:
