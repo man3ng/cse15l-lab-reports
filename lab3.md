@@ -181,8 +181,9 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
         A way of predicting these meningitis epidemics could be enormously useful. Sultan and
         colleagues looked at only a few years, but if these findings are confirmed over a longer
         time period, they could make preparing for an epidemic much more efficient.`
+
        Here, we are in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/plos` and we are exploring one of the file in this directory to display all the lines that do not match **"Tri"** from this particular file.
-    2. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
+    3. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
        Output: `38054`
        While I could display all the lines, it would not be able to fit all of them in this particular document. However, if you are trying to remove a particular file with the "pattern" out of the directory, now you have all the files needed for your automated tool to start removing. Extremely useful!
 4. Fourth variation: `grep -c "pattern" <file_name>`
@@ -208,6 +209,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
                911report//chapter-12.txt:22
                911report//chapter-10.txt:5
                911report//chapter-11.txt:2`
+
       Here we are counting how many lines through the recursive method in the directory `911report/` with the pattern **"help"**. The output is listing for all the files in there and how many times did the pattern occur.
 
 - Citation:
