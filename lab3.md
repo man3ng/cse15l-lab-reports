@@ -86,9 +86,9 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 ### Part Two: Researching Command Lines Options - `GREP`
 1. First variation: `grep -r "pattern" directory/`
   - The function is recursively searching the inputted directories and search everything in there that has the pattern
-    1. Input: `trilosophe@Trilosophes-MBP-16 docsearch % grep -r "tri" technical/`
-       //
-       Output:
+    1. First case:
+    - Input: `trilosophe@Trilosophes-MBP-16 docsearch % grep -r "tri" technical/`
+    - Output:
        `technical//biomed/1476-069X-2-9.txt:        in this study it was found that chemical distribution
        technical//biomed/1476-069X-2-9.txt:        Authors' contributions
        technical//biomed/1478-1336-1-3.txt:        intrinsic histone acetyltransferase activity suggests that
@@ -101,12 +101,11 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
        technical//biomed/1471-2164-2-4.txt:        triplicate, the genotyping accuracy jumped to over 99%. The
        technical//biomed/1471-2164-2-4.txt:        and industrial laboratories.
        technical//biomed/1471-2164-2-4.txt:          CAU). The DNA samples were digested with the restriction`
-
-       I recursively searched within the `technical/` directory find any files and sub-directories with the pattern of **"Tri"**. There were hundred of lines that have the matched pattern. I didn't include it here due to space. Biggest downside, if you are looking through all of this, there are too many files to look at and you can't get much out of it.
-    3. Input: `grep -r "Tri" technical/ | wc -l`
-       <br>
-       Output: `900`
-       With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
+    - I recursively searched within the `technical/` directory find any files and sub-directories with the pattern of **"Tri"**. There were hundred of lines that have the matched pattern. I didn't include it here due to space. Biggest downside, if you are looking through all of this, there are too many files to look at and you can't get much out of it.
+    2. Second case:
+    - Input: `grep -r "Tri" technical/ | wc -l`
+    - Output: `900`
+    - With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
             
 2. Second variation: `grep -A <afterlineNum> "filename"`
   - To follow up with the last command, we are displaying the content of a particular file that we want onto the terminal after a certain line numbers.
