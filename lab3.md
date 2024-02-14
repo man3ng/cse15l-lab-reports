@@ -87,113 +87,117 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 1. First variation: `grep -r "pattern" directory/`
   - The function is recursively searching the inputted directories and search everything in there that has the pattern
     1. First case:
-    - Input: `trilosophe@Trilosophes-MBP-16 docsearch % grep -r "tri" technical/`
-    - Output:
-       `technical//biomed/1476-069X-2-9.txt:        in this study it was found that chemical distribution
-       technical//biomed/1476-069X-2-9.txt:        Authors' contributions
-       technical//biomed/1478-1336-1-3.txt:        intrinsic histone acetyltransferase activity suggests that
-       technical//biomed/1478-1336-1-3.txt:          105 per well) in 5% charcoal stripped serum (Hyclone,
-       technical//biomed/1478-1336-1-3.txt:          phenol red-free DMEM containing 5% charcoal stripped
-       technical//biomed/1478-1336-1-3.txt:        Authors' Contributions
-       technical//biomed/1471-2164-2-4.txt:          restriction endonuclease Alu I and assayed in two
-       technical//biomed/1471-2164-2-4.txt:          determined by restriction fragment length polymorphism or
-       technical//biomed/1471-2164-2-4.txt:          samples were repeated in triplicate the genotyping
-       technical//biomed/1471-2164-2-4.txt:        triplicate, the genotyping accuracy jumped to over 99%. The
-       technical//biomed/1471-2164-2-4.txt:        and industrial laboratories.
-       technical//biomed/1471-2164-2-4.txt:          CAU). The DNA samples were digested with the restriction`
-    - I recursively searched within the `technical/` directory find any files and sub-directories with the pattern of **"Tri"**. There were hundred of lines that have the matched pattern. I didn't include it here due to space. Biggest downside, if you are looking through all of this, there are too many files to look at and you can't get much out of it.
+         - Input: `trilosophe@Trilosophes-MBP-16 docsearch % grep -r "tri" technical/`
+         - Output:
+            `technical//biomed/1476-069X-2-9.txt:        in this study it was found that chemical distribution
+            technical//biomed/1476-069X-2-9.txt:        Authors' contributions
+            technical//biomed/1478-1336-1-3.txt:        intrinsic histone acetyltransferase activity suggests that
+            technical//biomed/1478-1336-1-3.txt:          105 per well) in 5% charcoal stripped serum (Hyclone,
+            technical//biomed/1478-1336-1-3.txt:          phenol red-free DMEM containing 5% charcoal stripped
+            technical//biomed/1478-1336-1-3.txt:        Authors' Contributions
+            technical//biomed/1471-2164-2-4.txt:          restriction endonuclease Alu I and assayed in two
+            technical//biomed/1471-2164-2-4.txt:          determined by restriction fragment length polymorphism or
+            technical//biomed/1471-2164-2-4.txt:          samples were repeated in triplicate the genotyping
+            technical//biomed/1471-2164-2-4.txt:        triplicate, the genotyping accuracy jumped to over 99%. The
+            technical//biomed/1471-2164-2-4.txt:        and industrial laboratories.
+            technical//biomed/1471-2164-2-4.txt:          CAU). The DNA samples were digested with the restriction`
+         - I recursively searched within the `technical/` directory find any files and sub-directories with the pattern of **"Tri"**. There were hundred of lines that have the matched pattern. I didn't include it here due to space. Biggest downside, if you are looking through all of this, there are too many files to look at and you can't get much out of it.
     2. Second case:
-    - Input: `grep -r "Tri" technical/ | wc -l`
-    - Output: `900`
-    - With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
+         - Input: `grep -r "Tri" technical/ | wc -l`
+         - Output: `900`
+         - With `| wc -l`, from the output before, we are counting the entire line of the file from the `grep -r` that contains **"Tri"**. In total, we have 900 lines. This is slightly more useful because now you have a precise information out of all the raw data from before.
             
 2. Second variation: `grep -A <afterlineNum> "filename"`
   - To follow up with the last command, we are displaying the content of a particular file that we want onto the terminal after a certain line numbers.
-    1. Input: `trilosophe@Trilosophes-MBP-16 Media % grep -A 5 "law" Legal_Aid_attorney.txt`
-       Output:
-     `Depictions of lawyers in American pop culture are
-     notoriously unkind.
-     Whether castigating them on the silver screen, between the lines
-     of pulpy, true-crime narratives, or in the jokes told around the
-     proverbial water cooler, attorneys have been on the receiving end
-     of many a hackneyed punch line.
-     --
-     when she entered law school at Georgetown University that she
-     wanted to use her training to help others.
-     "A reason I went to law school was to do social justice work,"
-     Schwartz said recently. "I get paid to make the community a better
-     place for vulnerable people -- and I like that." Schwartz grew up
-     in Charlotte, N.C. She earned a bachelor's degree in English
-     literature from Davidson College before heading to Georgetown for
-     her law degree, where she finished in 1993.
-     "When I was in school I really liked Virginia Woolf," Schwartz
-     said of her nascent literary tastes. "Right now what I read is
-     nonfiction.
-     "I've been reading a lot about Buddhism," she added. "I just
-     sort of call it my peace studies program -- any author that I think
-     --
-     tribal and housing law. Legal Aid is a nonprofit national
-     organization aimed at providing low-cost or free legal aid to those
-     who need it.
-     A South Dakota blizzard six years ago prompted her to call the
-     Roseburg office, which, coincidentally, was in the process of
-     trying to find her to fill the vacancy left by Rubenstein's
-     trilosophe@Trilosophes-MBP-16 Media % `
-     
-     For this example, I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government/Media`. I want to display the content containing the word **"law"** in this particular file after line number **5**. It is particular useful if you are working with organized data and are searching for some particular lines of the text.
+    1. First case:
+         - Input: `trilosophe@Trilosophes-MBP-16 Media % grep -A 5 "law" Legal_Aid_attorney.txt`
+         - Output:
+               `Depictions of lawyers in American pop culture are
+               notoriously unkind.
+               Whether castigating them on the silver screen, between the lines
+               of pulpy, true-crime narratives, or in the jokes told around the
+               proverbial water cooler, attorneys have been on the receiving end
+               of many a hackneyed punch line.
+               --
+               when she entered law school at Georgetown University that she
+               wanted to use her training to help others.
+               "A reason I went to law school was to do social justice work,"
+               Schwartz said recently. "I get paid to make the community a better
+               place for vulnerable people -- and I like that." Schwartz grew up
+               in Charlotte, N.C. She earned a bachelor's degree in English
+               literature from Davidson College before heading to Georgetown for
+               her law degree, where she finished in 1993.
+               "When I was in school I really liked Virginia Woolf," Schwartz
+               said of her nascent literary tastes. "Right now what I read is
+               nonfiction.
+               "I've been reading a lot about Buddhism," she added. "I just
+               sort of call it my peace studies program -- any author that I think
+               --
+               tribal and housing law. Legal Aid is a nonprofit national
+               organization aimed at providing low-cost or free legal aid to those
+               who need it.
+               A South Dakota blizzard six years ago prompted her to call the
+               Roseburg office, which, coincidentally, was in the process of
+               trying to find her to fill the vacancy left by Rubenstein's
+               trilosophe@Trilosophes-MBP-16 Media % `
+          - For this example, I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government/Media`. I want to display the content containing the word **"law"** in this particular file after line number **5**. It is particular useful if you are working with organized data and are searching for some particular lines of the text.
     
-     2. Input: `trilosophe@Trilosophes-MBP-16 government % grep -r -A 5 "law" Media/ | wc -l`
-        Output: `4445`
-        I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government` and combining the technique from the previous example to recursively search through the `Media/` directory to find all the files with the pattern **"law"** after line number 5 and count the number of lines that are outputing.
+     2. Second case:
+        - Input: `trilosophe@Trilosophes-MBP-16 government % grep -r -A 5 "law" Media/ | wc -l`
+        - Output: `4445`
+        - I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government` and combining the technique from the previous example to recursively search through the `Media/` directory to find all the files with the pattern **"law"** after line number 5 and count the number of lines that are outputing.
 3. Third variation: `grep -v "pattern" <filename>`
   - We are displaying the part that do not match that pattern. It is particularly useful if you are looking for something that's wrong.
-    1. Input: `trilosophe@Trilosophes-MBP-16 plos grep -v "Tri" pmed.0020024.txt %`
-       Output:
-       `Many different things combine to cause epidemics of disease. Among these factors are the
-        characteristics of the infecting organism, the resistance of the host, and, as is
-        increasingly realized, climatic conditions.
-        El Niño, the best known climatic disturbance, is caused by a warming of the Pacific
-        Ocean, which then affects the climate globally. Previous work has suggested that this
-        recurring phenomenon can have a profound effect on the incidence of many diseases,
-        including dengue, malaria, and diarrheal diseases.
-        In a paper in this month's 
-        PLoS Medicine , Sultan and colleagues from a climate research institute
-        and an infectious diseases center in France looked at the relation between climate and
-        meningitis outbreaks in Mali in West Africa, a region that every year between February and
-        May sees devastating epidemics of meningococcal meningitis affecting up to 200,000 people.
-        The most important recurring climatic event in this region is a dry wind, known as the
-        Harmattan, that blows throughout the winter, causing a drop in humidity and the production
-        of vast quantities of dust.
-        What the authors found was that over the years 1994–2002, the week of the onset of the
-        yearly meningitis epidemic came at around the same time as the peak of one measure of the
-        wind—the sixth week of the year. As Pascual and Dobson say in their Perspective article on
-        this study, “Sultan and colleagues' study is exceptional in that it illustrates a clear
-        relationship between an external environmental variable and the initiation of disease
-        outbreaks.”
-        How do climatic changes influence disease? In some cases, such as the role of flooding
-        in spreading a waterborne disease, the causes are perhaps obvious, but why should a dry
-        wind affect disease incidence? Previous works have suggested that the climate can work in a
-        number of ways, by influencing the life cycle of both disease vectors and the
-        disease-causing organism, and, as here perhaps, by affecting the resistance of the host.
-        Sultan and colleagues speculate that the drying effects of the wind on the mucous membranes
-        could increase the chances of the organism getting established in the human host. Whatever
-        the causes, one very useful feature of climate is that, once the patterns are understood,
-        they can often be predicted.
-        A way of predicting these meningitis epidemics could be enormously useful. Sultan and
-        colleagues looked at only a few years, but if these findings are confirmed over a longer
-        time period, they could make preparing for an epidemic much more efficient.`
-
-       Here, we are in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/plos` and we are exploring one of the file in this directory to display all the lines that do not match **"Tri"** from this particular file.
-    3. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
-       Output: `38054`
-       While I could display all the lines, it would not be able to fit all of them in this particular document. However, if you are trying to remove a particular file with the "pattern" out of the directory, now you have all the files needed for your automated tool to start removing. Extremely useful!
+    1. First case:
+         - Input: `trilosophe@Trilosophes-MBP-16 plos grep -v "Tri" pmed.0020024.txt %`
+         - Output:
+            `Many different things combine to cause epidemics of disease. Among these factors are the
+             characteristics of the infecting organism, the resistance of the host, and, as is
+             increasingly realized, climatic conditions.
+             El Niño, the best known climatic disturbance, is caused by a warming of the Pacific
+             Ocean, which then affects the climate globally. Previous work has suggested that this
+             recurring phenomenon can have a profound effect on the incidence of many diseases,
+             including dengue, malaria, and diarrheal diseases.
+             In a paper in this month's 
+             PLoS Medicine , Sultan and colleagues from a climate research institute
+             and an infectious diseases center in France looked at the relation between climate and
+             meningitis outbreaks in Mali in West Africa, a region that every year between February and
+             May sees devastating epidemics of meningococcal meningitis affecting up to 200,000 people.
+             The most important recurring climatic event in this region is a dry wind, known as the
+             Harmattan, that blows throughout the winter, causing a drop in humidity and the production
+             of vast quantities of dust.
+             What the authors found was that over the years 1994–2002, the week of the onset of the
+             yearly meningitis epidemic came at around the same time as the peak of one measure of the
+             wind—the sixth week of the year. As Pascual and Dobson say in their Perspective article on
+             this study, “Sultan and colleagues' study is exceptional in that it illustrates a clear
+             relationship between an external environmental variable and the initiation of disease
+             outbreaks.”
+             How do climatic changes influence disease? In some cases, such as the role of flooding
+             in spreading a waterborne disease, the causes are perhaps obvious, but why should a dry
+             wind affect disease incidence? Previous works have suggested that the climate can work in a
+             number of ways, by influencing the life cycle of both disease vectors and the
+             disease-causing organism, and, as here perhaps, by affecting the resistance of the host.
+             Sultan and colleagues speculate that the drying effects of the wind on the mucous membranes
+             could increase the chances of the organism getting established in the human host. Whatever
+             the causes, one very useful feature of climate is that, once the patterns are understood,
+             they can often be predicted.
+             A way of predicting these meningitis epidemics could be enormously useful. Sultan and
+             colleagues looked at only a few years, but if these findings are confirmed over a longer
+             time period, they could make preparing for an epidemic much more efficient.`
+         - Here, we are in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/plos` and we are exploring one of the file in this directory to display all the lines that do not match **"Tri"** from this particular file.
+    2. Second case:
+       - Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
+       - Output: `38054`
+       - While I could display all the lines, it would not be able to fit all of them in this particular document. However, if you are trying to remove a particular file with the "pattern" out of the directory, now you have all the files needed for your automated tool to start removing. Extremely useful!
 4. Fourth variation: `grep -c "pattern" <file_name>`
    Whenever you want to know how many lines match the pattern, use this command.
-   1. Input: `trilosophe@Trilosophes-MBP-16 911report % grep -c "help" chapter-13.5.txt`
-      Output: `13`
-      Here we are counting how many lines in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/911report` file named `chapter-13.5.txt` that contains the pattern **"help**. The output said there are 13 occurences.
-   2. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -c "help" 911report/`
-      Output: `911report//chapter-13.4.txt:13
+   1. First case
+      - Input: `trilosophe@Trilosophes-MBP-16 911report % grep -c "help" chapter-13.5.txt`
+      - Output: `13`
+      - Here we are counting how many lines in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/911report` file named `chapter-13.5.txt` that contains the pattern **"help**. The output said there are 13 occurences.
+   2. Second case:
+      - Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -c "help" 911report/`
+      - Output: `911report//chapter-13.4.txt:13
                911report//chapter-13.5.txt:13
                911report//chapter-13.1.txt:10
                911report//chapter-13.2.txt:0
@@ -211,7 +215,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
                911report//chapter-10.txt:5
                911report//chapter-11.txt:2`
 
-      Here we are counting how many lines through the recursive method in the directory `911report/` with the pattern **"help"**. The output is listing for all the files in there and how many times did the pattern occur.
+      - Here we are counting how many lines through the recursive method in the directory `911report/` with the pattern **"help"**. The output is listing for all the files in there and how many times did the pattern occur.
 
 - Citation:
   - ChatGPT:
