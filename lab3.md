@@ -140,6 +140,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
      Roseburg office, which, coincidentally, was in the process of
      trying to find her to fill the vacancy left by Rubenstein's
      trilosophe@Trilosophes-MBP-16 Media % `
+     
      For this example, I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government/Media`. I want to display the content containing the word **"law"** in this particular file after line number **5**. It is particular useful if you are working with organized data and are searching for some particular lines of the text.
      2. Input: `trilosophe@Trilosophes-MBP-16 government % grep -r -A 5 "law" Media/ | wc -l`
         Output: `4445`
