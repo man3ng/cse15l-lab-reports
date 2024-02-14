@@ -142,6 +142,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
      trilosophe@Trilosophes-MBP-16 Media % `
      
      For this example, I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government/Media`. I want to display the content containing the word **"law"** in this particular file after line number **5**. It is particular useful if you are working with organized data and are searching for some particular lines of the text.
+    
      2. Input: `trilosophe@Trilosophes-MBP-16 government % grep -r -A 5 "law" Media/ | wc -l`
         Output: `4445`
         I am in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/government` and combining the technique from the previous example to recursively search through the `Media/` directory to find all the files with the pattern **"law"** after line number 5 and count the number of lines that are outputing.
