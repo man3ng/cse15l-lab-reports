@@ -1,4 +1,4 @@
-# Lab Report #2
+# Lab Report #3
 CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@ucsd.edu
 ### Part One: Bugs from Week 4 Lab
 1. Failure inducing-input for the buggy program
