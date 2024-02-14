@@ -185,7 +185,30 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
     2. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -n -v "Tri" plos/ | wc -l`
        Output: `38054`
        While I could display all the lines, it would not be able to fit all of them in this particular document. However, if you are trying to remove a particular file with the "pattern" out of the directory, now you have all the files needed for your automated tool to start removing. Extremely useful!
-4. Fourth variation: ``
+4. Fourth variation: `grep -c "pattern" <file_name>`
+   Whenever you want to know how many lines match the pattern, use this command.
+   1. Input: `trilosophe@Trilosophes-MBP-16 911report % grep -c "help" chapter-13.5.txt`
+      Output: `13`
+      Here we are counting how many lines in `/Users/trilosophe/Downloads/CSE/15/LabWeek5/docsearch/technical/911report` file named `chapter-13.5.txt` that contains the pattern **"help**. The output said there are 13 occurences.
+   2. Input: `trilosophe@Trilosophes-MBP-16 technical % grep -r -c "help" 911report/`
+      Output: `911report//chapter-13.4.txt:13
+               911report//chapter-13.5.txt:13
+               911report//chapter-13.1.txt:10
+               911report//chapter-13.2.txt:0
+               911report//chapter-13.3.txt:3
+               911report//chapter-3.txt:12
+               911report//chapter-2.txt:12
+               911report//chapter-1.txt:6
+               911report//chapter-5.txt:18
+               911report//chapter-6.txt:16
+               911report//chapter-7.txt:28
+               911report//chapter-9.txt:12
+               911report//chapter-8.txt:5
+               911report//preface.txt:3
+               911report//chapter-12.txt:22
+               911report//chapter-10.txt:5
+               911report//chapter-11.txt:2`
+      Here we are counting how many lines through the recursive method in the directory `911report/` with the pattern **"help"**. The output is listing for all the files in there and how many times did the pattern occur.
 
 - Citation:
   - ChatGPT:
