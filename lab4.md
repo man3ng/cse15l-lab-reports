@@ -33,7 +33,17 @@ or "prep -h" for more options.
 - I have successfully log on to the virtual lab machine.
 
 ### Part Two: Step 5 From Week 7 Lab
-
+- After logging on to the lab machine, if I haven't done it already then I should create an SSH key in order to `git clone` with SSH. However, I already completed that step so I am ready to clone the forked repository from lab 7. In the terminal, I will run `git clone git@github.com:man3ng/lab7-assignment.git` to clone with SSH. It will output as below after you finish cloning.
+```
+[man026@ieng6-201]:~:151$ git clone git@github.com:man3ng/lab7-assignment.git
+Cloning into 'lab7-assignment'...
+Warning: Permanently added the RSA host key for IP address '140.82.112.3' to the list of known hosts.
+remote: Enumerating objects: 58, done.
+remote: Total 58 (delta 0), reused 0 (delta 0), pack-reused 58
+Receiving objects: 100% (58/58), 376.39 KiB | 1.42 MiB/s, done.
+Resolving deltas: 100% (21/21), done.
+[man026@ieng6-201]:~:152$ 
+```
 ### Part Three: Step 6 From Week 7 Lab
 
 ### Part Four: Step 7 From Week 7 Lab
