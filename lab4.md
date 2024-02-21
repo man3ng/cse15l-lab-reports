@@ -112,4 +112,46 @@ OK (2 tests)
 **Key Pressed:** `bash <Spacebar> test.sh <Enter>`
 
 ### Part Six: Step 9 From Week 7 Lab
-- 
+- fdf
+```
+[man026@ieng6-201]:lab7-assignment:164$ git add ListExamples.java 
+[man026@ieng6-201]:lab7-assignment:165$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   ListExamples.java
+
+[man026@ieng6-201]:lab7-assignment:166$ git commit -m "index2 and list2 while loop edit"
+[main de2989e] index2 and list2 while loop edit
+ Committer: Tri Nguyen <man026@ieng6-201.ucsd.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[man026@ieng6-201]:lab7-assignment:167$ git push
+Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:man3ng/lab7-assignment.git
+   327ab1a..de2989e  main -> main
+[man026@ieng6-201]:lab7-assignment:168$ 
+```
+Proof of Change:
+<img width="1680" alt="image" src="https://github.com/ucsd-cse15l-s23/lab7/assets/141669725/898c981b-ef9a-44cb-b482-1bfea5cba15e">
+
