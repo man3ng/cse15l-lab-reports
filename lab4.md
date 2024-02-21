@@ -45,6 +45,28 @@ Resolving deltas: 100% (21/21), done.
 [man026@ieng6-201]:~:152$ 
 ```
 ### Part Three: Step 6 From Week 7 Lab
+- After successfully cloning the repository `lab7-assignment` to my lab machine, I can now begin the testing process. First, on the terminal, I press `ls` to get the general idea of all the subfolders. Then I press `cd lab7-assignment` to get into the directory. Then, I press `bash test.sh` to run the test demonstrating that no edit to the files have been made and there will be an error outputted when running `ListExamplesTests.java` from `test.sh`. 
+```
+[man026@ieng6-201]:~:153$ ls
+lab7  lab7-assignment  new_file.txt  perl5  skill-demo1  wavelet
+[man026@ieng6-201]:~:154$ cd lab7-assignment/
+[man026@ieng6-201]:lab7-assignment:155$ ls
+ListExamples.java  ListExamplesTests.java  lib  test.sh
+[man026@ieng6-201]:lab7-assignment:156$ bash test.sh
+JUnit version 4.13.2
+..E
+Time: 0.518
+There was 1 failure:
+1) testMerge2(ListExamplesTests)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at ListExamples.merge(ListExamples.java:44)
+	at ListExamplesTests.testMerge2(ListExamplesTests.java:19)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+
+[man026@ieng6-201]:lab7-assignment:157$
+```
 
 ### Part Four: Step 7 From Week 7 Lab
 
