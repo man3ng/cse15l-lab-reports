@@ -31,6 +31,7 @@ or "prep -h" for more options.
 [man026@ieng6-201]:~:144$
 ```
 - I have successfully log on to the virtual lab machine.
+**Key Pressed:** `ssh <Spacebar> man026@ieng6-201.ucsd.edu <Enter>`
 
 ### Part Two: Step 5 From Week 7 Lab
 - After logging on to the lab machine, if I haven't done it already then I should create an SSH key in order to `git clone` with SSH. However, I already completed that step so I am ready to clone the forked repository from lab 7. In the terminal, I will run `git clone git@github.com:man3ng/lab7-assignment.git` to clone with SSH. It will output as below after you finish cloning.
@@ -42,10 +43,12 @@ remote: Enumerating objects: 58, done.
 remote: Total 58 (delta 0), reused 0 (delta 0), pack-reused 58
 Receiving objects: 100% (58/58), 376.39 KiB | 1.42 MiB/s, done.
 Resolving deltas: 100% (21/21), done.
-[man026@ieng6-201]:~:152$ 
+[man026@ieng6-201]:~:152$
 ```
+**Key Pressed:** `git <Spacebar> clone <Spacebar> git@github.com:man3ng/lab7-assignment.git <Enter>`
+
 ### Part Three: Step 6 From Week 7 Lab
-- After successfully cloning the repository `lab7-assignment` to my lab machine, I can now begin the testing process. First, on the terminal, I press `ls` to get the general idea of all the subfolders. Then I press `cd lab7-assignment` to get into the directory. Then, I press `bash test.sh` to run the test demonstrating that no edit to the files have been made and there will be an error outputted when running `ListExamplesTests.java` from `test.sh`. 
+- After successfully cloning the repository `lab7-assignment` to my lab machine, I can now begin the testing process. First, on the terminal, I press `ls` to get the general idea of all the subfolders. Then I press `cd lab7-assignment` to get into the directory. Then, I press `bash test.sh` to run the test demonstrating that no edit to the files have been made and there will be an error outputted when running `ListExamplesTests.java` from `test.sh`.
 ```
 [man026@ieng6-201]:~:153$ ls
 lab7  lab7-assignment  new_file.txt  perl5  skill-demo1  wavelet
@@ -67,8 +70,32 @@ Tests run: 2,  Failures: 1
 
 [man026@ieng6-201]:lab7-assignment:157$
 ```
+**Key Pressed:** `ls <Enter>`, `cd lab7-assignment <Enter>`, `ls <Enter>`, `bash <Spacebar> test.sh <Enter>` 
 
 ### Part Four: Step 7 From Week 7 Lab
+- I realized that the `ListExamples.java` file is failing the test so I will open the **VIM** text editor to go find the error and edit it. Since I am already at the correct directory, I don't have to change the directory or list all the sub-items under my current working directory. After getting into the **VIM** editor, I have to get to press `j` 43 times to get to the line (44) that needed to be edited. Then I press `e` to get to the first word before the last character, `dw` to delete the last character, `i` to insert with `2` as the input and `<Spacebar>` to maintain original formatting in sequence to change the variable `index1` to `index2`. Then, I pressed `<ESC>` with `:wq!` to exit and save.
+```
+[man026@ieng6-201]:lab7-assignment:160$ vim ListExamples.java
+```
+Before code snippet:
+```
+while(index2 < list2.size()) {
+	result.add(list2.get(index2));
+	// change index1 below to index2 to fix test
+	index1 += 1;
+}
+```
+After code snippet:
+```
+while(index2 < list2.size()) {
+	result.add(list2.get(index2));
+	// change index1 below to index2 to fix test
+	index2 += 1;
+}
+```
+**Key Pressed:** 
+1. `vim <Spacebar> List<Tab>Examples.java <Enter>`, I have to manually type `.java`
+2. Inside the vim editor: `j * 43` + `e` + `dw` + `i` + `2` + `<Spacebar>` + `<ESC>` + `<:wq!>`
 
 ### Part Five: Step 8 From Week 7 Lab
 
