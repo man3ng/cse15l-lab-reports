@@ -96,12 +96,14 @@ while(index2 < list2.size()) {
 	index2 += 1;
 }
 ```
+
 **Key Pressed:** 
 1. `vim <Spacebar> List<Tab>Examples.java <Enter>`, I have to manually type `.java`
 2. Inside the vim editor: `j * 43` + `e` + `dw` + `i` + `2` + `<Spacebar>` + `<ESC>` + `<:wq!>`
 
 ### Part Five: Step 8 From Week 7 Lab
 - At my working directory, `/home/linux/ieng6/oce/8o/man026/lab7-assignment`, I just have to rerun the `test.sh` file again to ensure that the edit is saved and the file will pass the test.
+
 ```bash
 [man026@ieng6-201]:lab7-assignment:163$ bash test.sh 
 JUnit version 4.13.2
