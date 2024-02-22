@@ -50,6 +50,7 @@ Resolving deltas: 100% (21/21), done.
 
 ### Part Three: Step 6 From Week 7 Lab
 - After successfully cloning the repository `lab7-assignment` to my lab machine, I can now begin the testing process. First, on the terminal, I press `ls` to get the general idea of all the subfolders. Then I press `cd lab7-assignment` to get into the directory (`/home/linux/ieng6/oce/8o/man026/lab7-assignment`). Then, I press `bash test.sh` to run the test demonstrating that no edit to the files have been made and there will be an error outputted when running `ListExamplesTests.java` from `test.sh`.
+
 ```bash
 [man026@ieng6-201]:~:153$ ls
 lab7  lab7-assignment  new_file.txt  perl5  skill-demo1  wavelet
@@ -71,7 +72,8 @@ Tests run: 2,  Failures: 1
 
 [man026@ieng6-201]:lab7-assignment:157$
 ```
-**Key Pressed:** `ls <Enter>`, `cd lab7-assignment <Enter>`, `ls <Enter>`, `bash <Spacebar> test.sh <Enter>` 
+
+**Key Pressed:** `ls <Enter>`, `cd lab7-assignment <Enter>`, `ls <Enter>`, `bash <Spacebar> test.sh <Enter>`
 
 ### Part Four: Step 7 From Week 7 Lab
 - I realized that the `ListExamples.java` file is failing the test so I will open the **VIM** text editor to go find the error and edit it. Since I am already at the correct directory (`/home/linux/ieng6/oce/8o/man026/lab7-assignment`) I don't have to change the directory or list all the sub-items under my current working directory. After getting into the **VIM** editor, I have to get to press `j` 43 times to get to the line (44) that needed to be edited. Then I press `e` to get to the first word before the last character, `dw` to delete the last character, `i` to insert with `2` as the input and `<Spacebar>` to maintain original formatting in sequence to change the variable `index1` to `index2`. Then, I pressed `<ESC>` with `:wq!` to exit and save. Now, we are back at the terminal on a new line ready for the next command.
