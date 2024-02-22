@@ -51,7 +51,7 @@ Resolving deltas: 100% (21/21), done.
 ### Part Three: Step 6 From Week 7 Lab
 - After successfully cloning the repository `lab7-assignment` to my lab machine, I can now begin the testing process. First, on the terminal, I press `ls` to get the general idea of all the subfolders. Then I press `cd lab7-assignment` to get into the directory (`/home/linux/ieng6/oce/8o/man026/lab7-assignment`). Then, I press `bash test.sh` to run the test demonstrating that no edit to the files have been made and there will be an error outputted when running `ListExamplesTests.java` from `test.sh`.
 
-```json
+```bash
 [man026@ieng6-201]:~:153$ ls
 lab7  lab7-assignment  new_file.txt  perl5  skill-demo1  wavelet
 [man026@ieng6-201]:~:154$ cd lab7-assignment/
@@ -71,6 +71,7 @@ FAILURES!!!
 Tests run: 2,  Failures: 1
 
 [man026@ieng6-201]:lab7-assignment:157$
+
 ```
 
 **Key Pressed:** `ls <Enter>`, `cd lab7-assignment <Enter>`, `ls <Enter>`, `bash <Spacebar> test.sh <Enter>`
