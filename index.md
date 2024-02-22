@@ -7,4 +7,5 @@
 - [Lab-1-Report](https://man3ng.github.io/cse15l-lab-reports/lab1.html)
 - [Lab-2-Report](https://man3ng.github.io/cse15l-lab-reports/lab2.html)
 - [Lab-3-Report](https://man3ng.github.io/cse15l-lab-reports/lab3.html)
-- [Lab-4-Report](https://www.youtube.com/watch?v=xvFZjo5PgG0)
+- [Lab-4-Report](https://man3ng.github.io/cse15l-lab-reports/lab4.html)
+- [Lab-5-Report](https://www.youtube.com/watch?v=xvFZjo5PgG0)
