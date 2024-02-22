@@ -112,7 +112,7 @@ OK (2 tests)
 **Key Pressed:** `bash <Spacebar> test.sh <Enter>`
 
 ### Part Six: Step 9 From Week 7 Lab
-- fdf
+- At the current directory, `/home/linux/ieng6/oce/8o/man026/lab7-assignment`, I will now use git `add`, `commit -m "Message`, and check the `status` before `push`ing to the **lab7-assigment** repository. These are the steps that you will do every time you are planning to make a change to file and using git to add, commit and push for a change to a source (github) which we connected to on Part One.
 ```
 [man026@ieng6-201]:lab7-assignment:164$ git add ListExamples.java 
 [man026@ieng6-201]:lab7-assignment:165$ git status
@@ -155,3 +155,8 @@ To github.com:man3ng/lab7-assignment.git
 Proof of Change:
 <img width="1680" alt="image" src="https://github.com/ucsd-cse15l-s23/lab7/assets/141669725/898c981b-ef9a-44cb-b482-1bfea5cba15e">
 
+**Key Pressed:**
+1. `git <Space> add ListE<Tab>xamples.java <Enter>`, add the edited file to the staging area. `<Tab>` filled with `xamples.java`.
+2. `git <Space> status <Enter>`, check the staging area.
+3. `git <Space> commit <Space> -m <Space> "index2 and list2 while loop edit" <Enter>`, captures a snapshot of the project's currently staged changes before pushing.
+4. `git <Space> push <Enter>`, push the changes to the `lab7-assignment` repository.
