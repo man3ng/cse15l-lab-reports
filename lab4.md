@@ -78,7 +78,7 @@ Tests run: 2,  Failures: 1
 
 `[man026@ieng6-201]:lab7-assignment:160$ vim ListExamples.java`
 Before code snippet:
-```bash
+```java
 while(index2 < list2.size()) {
 	result.add(list2.get(index2));
 	// change index1 below to index2 to fix test
@@ -86,7 +86,7 @@ while(index2 < list2.size()) {
 }
 ```
 After code snippet:
-```bash
+```java
 while(index2 < list2.size()) {
 	result.add(list2.get(index2));
 	// change index1 below to index2 to fix test
