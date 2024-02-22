@@ -79,6 +79,7 @@ Tests run: 2,  Failures: 1
 - I realized that the `ListExamples.java` file is failing the test so I will open the **VIM** text editor to go find the error and edit it. Since I am already at the correct directory (`/home/linux/ieng6/oce/8o/man026/lab7-assignment`) I don't have to change the directory or list all the sub-items under my current working directory. After getting into the **VIM** editor, I have to get to press `j` 43 times to get to the line (44) that needed to be edited. Then I press `e` to get to the first word before the last character, `dw` to delete the last character, `i` to insert with `2` as the input and `<Spacebar>` to maintain original formatting in sequence to change the variable `index1` to `index2`. Then, I pressed `<ESC>` with `:wq!` to exit and save. Now, we are back at the terminal on a new line ready for the next command.
 
 `[man026@ieng6-201]:lab7-assignment:160$ vim ListExamples.java`
+
 Before code snippet:
 ```java
 while(index2 < list2.size()) {
