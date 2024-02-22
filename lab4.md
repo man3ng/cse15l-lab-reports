@@ -4,6 +4,7 @@ CSE 15L - Joe Politz - 10:00am - 11:50am | Manh Tri Nguyen | A17913483 | man026@
 
 ### Part One: Step 4 From Week 7 Lab
 - From your desktop, open terminal / command prompt. I am on a Mac so I will use the Mac jargon. First, press `CMD + Space`, search for `Terminal` then press enter. To log in to my ieng6 account, on the terminal prompt, I will type `ssh man026@ieng6-201.ucsd.edu`. The reason I am using @ieng6-201 is because there are some devices that I have issues with so -201 is the best option. Since I already have a private SSH key store, the terminal will output below:
+  
 ```
 trilosophe@Trilosophes-MBP-16 ~ % ssh man026@ieng6-201.ucsd.edu
 Last login: Wed Feb 21 11:27:43 2024 from 100.81.37.15
