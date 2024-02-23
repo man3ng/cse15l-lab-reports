@@ -166,7 +166,7 @@ Proof of Change:
 <img width="1680" alt="image" src="https://github.com/ucsd-cse15l-s23/lab7/assets/141669725/898c981b-ef9a-44cb-b482-1bfea5cba15e">
 
 **Key Pressed:**
-1. `git <Space> add ListE<Tab>xamples.java <Enter>`, add the edited file to the staging area. `<Tab>` filled with `xamples.java`.
+1. `git <Space> add <Space> ListE<Tab>xamples.java <Enter>`, add the edited file to the staging area. `<Tab>` filled with `xamples.java`.
 2. `git <Space> status <Enter>`, check the staging area.
 3. `git <Space> commit <Space> -m <Space> "index2 and list2 while loop edit" <Enter>`, captures a snapshot of the project's currently staged changes before pushing.
 4. `git <Space> push <Enter>`, push the changes to the `lab7-assignment` repository.
