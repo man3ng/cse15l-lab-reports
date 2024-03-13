@@ -49,7 +49,7 @@ cat $all_results | grep "Compile error"  > compile-errors.txt
 # run-results.txt
 cat $all_results | grep "Test results" > run-results.txt
 ```
-2. Student's current Sorter.java file:
+2. Student's current Sorter.java file (Error-inducing output):
 ```java
 import java.util.ArrayList;
 import java.util.Scanner;
