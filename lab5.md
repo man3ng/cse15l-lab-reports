@@ -136,7 +136,7 @@ Enter a list of integers separated by spaces:
 1 5 3 9 0 (OUTPUT)
 PS C:\Users\tring\Downloads\cse15l-lab-5\skill_demo3_data\submissions\student2>
 ```
-- I added the INPUT and OUTPUT in the code block for visual-representation. Immidately testing with a list of random numbers (provided test-expected.txt), you can immidately tell the bug lies somewhere within the algorithm. You can see that with the INPUT: 1 5 3 9 0, the process of converting from a String to Integer seems to go well; however, there is definitely something wrong with the algorithm because it's outputing exactly like the input.
+- I added the INPUT and OUTPUT in the code block for visual-representation. Immidately testing with a list of random numbers (provided test-expected.txt), you can immidately tell the bug lies somewhere within the algorithm. You can see that with the INPUT: 1 5 3 9 0, the process of converting from a String to Integer seems to go well; however, there is definitely something wrong with the algorithm because it's outputting exactly like the input.
 - Additionally, I run the file against the `grade.sh` file to verify my suspicion. unfortunately, I didn't figure out how to run a `.sh` file through bash on PowerShell. Therefore, I used the environment set up for the skill demo 3 to run it. It has the same configuration.
 ```PowerShell
 coder@8cf35600f95b:~/skill_demo3_data$ bash grade.sh
@@ -198,4 +198,5 @@ Enter a list of integers separated by spaces:
 0 1 3 5 9 (OUTPUT)
 ```
   - It's correctly sorted now!
-
+### Reflection:
+- I have learned many skills for this second half of this quarter. `Bash` is a powerful scripting language allowing me to streamline processes for better efficency. Additionally, VIM editor serves as a quick gate way between me and my code to quickly fix error with its interesting navigation and text manipulation technique. Lastly, I want to thank you Joe Politz for this class and Andrew for being an incredible tutor during lab time. This class will be renamed and changed to CSE 29, but I have learned important skills that will hopefully prepare me for CSE 30 and beyond.
