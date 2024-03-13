@@ -126,3 +126,76 @@ C:.
             input2.txt
             input2.txt.expect
 ```
+2. Testing out student2's (Jimmy) code in my terminal:
+```PowerShell
+PS C:\Users\tring\Downloads\cse15l-lab-5> cd .\skill_demo3_data\submissions\student2\
+PS C:\Users\tring\Downloads\cse15l-lab-5\skill_demo3_data\submissions\student2> javac .\Sorter.java
+PS C:\Users\tring\Downloads\cse15l-lab-5\skill_demo3_data\submissions\student2> java Sorter
+Enter a list of integers separated by spaces:
+1 5 3 9 0 (INPUT)
+1 5 3 9 0 (OUTPUT)
+PS C:\Users\tring\Downloads\cse15l-lab-5\skill_demo3_data\submissions\student2>
+```
+- I added the INPUT and OUTPUT in the code block for visual-representation. Immidately testing with a list of random numbers (provided test-expected.txt), you can immidately tell the bug lies somewhere within the algorithm. You can see that with the INPUT: 1 5 3 9 0, the process of converting from a String to Integer seems to go well; however, there is definitely something wrong with the algorithm because it's outputing exactly like the input.
+- Additionally, I run the file against the `grade.sh` file to verify my suspicion. unfortunately, I didn't figure out how to run a `.sh` file through bash on PowerShell. Therefore, I used the environment set up for the skill demo 3 to run it. It has the same configuration.
+```PowerShell
+coder@8cf35600f95b:~/skill_demo3_data$ bash grade.sh
+submissions/student1
+Compile successful for submissions/student1
+
+submissions/student2
+Compile successful for submissions/student2
+submissions/student3
+submissions/student4
+submissions/student5
+Compile successful for submissions/student5
+submissions/student6
+Compile successful for submissions/student6
+```
+As expected we got `submissions/student2: Test results: 1 passed, 1 failed`
+
+3. Offering solution/support to student
+   - It's quite a simple solution. Jimmy needed to sort his code using `Collections.sort(list)`
+![image](https://github.com/man3ng/cse15l-lab-reports/assets/141669725/6a066c6f-cce3-4e65-bc8e-bd39551905aa)
+
+Jimmy's updated code:
+```java
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
+
+class Sorter {
+  public static void main(String[] args) {
+    ArrayList<Integer> a = new ArrayList<>();
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("Enter a list of integers separated by spaces:");
+    String s = in.nextLine().trim();
+
+    for(String num: s.split(" ")) {
+      a.add(Integer.parseInt(num));
+    }
+    
+    Collections.sort(a); // Sort the list of integers
+
+    for(int i = 0; i < a.size(); i += 1) {
+      System.out.print(a.get(i));
+      if(i < a.size() - 1) { System.out.print(" "); } // Add space between integers
+    }
+    System.out.println();
+  }
+}
+```
+Jimmy's updated result.txt:
+`submissions/student2: Test results: 2 passed, 0 failed`
+
+TA's check on his end with his implementation expecting Jimmy to do the same:
+```PowerShell
+PS C:\Users\tring\Downloads\cse15l-lab-5\skill_demo3_data\submissions\student2> javac Sorter.java
+PS C:\Users\tring\Downloads\cse15l-lab-5\skill_demo3_data\submissions\student2> java Sorter
+Enter a list of integers separated by spaces:
+1 3 5 9 0 (INPUT)
+0 1 3 5 9 (OUTPUT)
+```
+  - It's correctly sorted now!
+
