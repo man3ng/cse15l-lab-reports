@@ -58,4 +58,5 @@ cat $all_results | grep "Test results" > run-results.txt
 
 ### Original Post:
 Summary: The student is having an issue with his file, Sorter.java. The current lab is to be able to find the and fix error of the file. The TA, me, will guide the student to the answer after running the student's file with a bash file in the background. In this problem, assume the student doesn't have access to the internal testing file that the TA have. They only have some inputs to test on and the test is rudimentary to encourage the students to write custom tester.
+
 ![image](https://github.com/man3ng/cse15l-lab-reports/assets/141669725/601d7589-8464-4c49-917d-64f89e42c188)
