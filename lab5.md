@@ -86,7 +86,7 @@ Summary: The student is having an issue with his file, Sorter.java. The current 
 ### Troubleshooting:
 1. Directory Structure:
    - Here, I have a few other students file to compare to and work with because there are more than one students who have completed the assignment or still having issue with the assignment.
-```
+```PowerShell
 PS C:\Users\tring\Downloads\cse15l-lab-5> pwd
 
 Path
