@@ -176,7 +176,7 @@ class Sorter {
       a.add(Integer.parseInt(num));
     }
     
-    Collections.sort(a); // Sort the list of integers
+    Collections.sort(a); // Sort the list of integers, FIXED BY TRI!!!
 
     for(int i = 0; i < a.size(); i += 1) {
       System.out.print(a.get(i));
