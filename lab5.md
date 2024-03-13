@@ -76,6 +76,7 @@ class Sorter {
 ```
 
 3. Student's result.txt file:
+`submissions/student2: Test results: 1 passed, 1 failed`
 
 ### Original Post:
 Summary: The student is having an issue with his file, Sorter.java. The current lab is to be able to find the and fix error of the file. The TA, me, will guide the student to the answer after running the student's file with a bash file in the background. In this problem, assume the student doesn't have access to the internal testing file that the TA have. They only have some inputs to test on and the test is rudimentary to encourage the students to write custom tester. The instructor test file will tell the students that they had fail the test but not specifically which one.
