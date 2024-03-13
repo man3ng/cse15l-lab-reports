@@ -51,7 +51,28 @@ cat $all_results | grep "Test results" > run-results.txt
 ```
 2. Student's current Sorter.java file:
 ```java
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
 
+class Sorter {
+  public static void main(String[] args) {
+    ArrayList<Integer> a = new ArrayList<>();
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("Enter a list of integers separated by spaces:");
+    String s = in.nextLine().trim();
+
+    for(String num: s.split(" ")) {
+      a.add(Integer.parseInt(num));
+    }
+    for(int i = 0; i < a.size(); i += 1) {
+      System.out.print(a.get(i));
+      if(i < a.size() - 1) { System.out.print(" "); }
+    }
+    System.out.println();
+  }
+}
 ```
 
 3. Student's result.txt file:
