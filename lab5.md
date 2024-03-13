@@ -84,3 +84,45 @@ Summary: The student is having an issue with his file, Sorter.java. The current 
 ![image](https://github.com/man3ng/cse15l-lab-reports/assets/141669725/601d7589-8464-4c49-917d-64f89e42c188)
 
 ### Troubleshooting:
+1. Directory Structure:
+   - Here, I have a few other students file to compare to and work with because there are more than one students who have completed the assignment or still having issue with the assignment.
+```
+PS C:\Users\tring\Downloads\cse15l-lab-5> pwd
+
+Path
+----
+C:\Users\tring\Downloads\cse15l-lab-5
+
+PS C:\Users\tring\Downloads\cse15l-lab-5> tree /f
+C:.
+└───skill_demo3_data
+    │   .gitignore
+    │   grade.sh
+    │
+    ├───submissions
+    │   ├───student1
+    │   │       Sorter.java
+    │   │
+    │   ├───student2
+    │   │       Sorter.class
+    │   │       Sorter.java
+    │   │
+    │   ├───student3
+    │   │       Sorter.java
+    │   │
+    │   ├───student4
+    │   │   └───pa3-code
+    │   │           Sorter.java
+    │   │
+    │   ├───student5
+    │   │       Sorter.java
+    │   │
+    │   └───student6
+    │           Sorter.java
+    │
+    └───test-data
+            input1.txt
+            input1.txt.expect
+            input2.txt
+            input2.txt.expect
+```
